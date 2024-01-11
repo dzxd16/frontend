@@ -1,0 +1,19 @@
+ul{
+    list-style-type:lower-latin;
+}
+.nomarker{
+    list-style-type: none;
+}
+ol{
+    list-style-type:square;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid red;
+}
+td{
+    border: 1px solid black;
+}
+th{
+    border: 2px solid black;
+}

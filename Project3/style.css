@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 10%;
+    border: 5px;
+    border-color: black;
+    border-style:solid;
+    padding: 20px;
+    margin: 10px;
+}
+
+.orange{
+    margin-left: 200px;
+    background-color: orange;
+}
+
+.green{
+    margin-left: 400px;
+}

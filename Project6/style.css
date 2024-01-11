@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;/* отмена подчеркивания у ссылок  */
+}
+
+header {
+    background-color: #1ABC9C;
+    padding: 15px 0 ; /* отступы  */
+    
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;   
+    display: flex; /* все по горизонтали  */
+    align-items: center; /* по центру по вертикали  */
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;/* отключить точки в списке (маркеры)  */
+}
+
+.nav-link {
+    font-size: 25px;
+    color: black;
+
+}
+li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.social-link:not(:last-child) {
+    margin-right: 20px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+}
+
+.about-img {
+    width: 50%;
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 35px;
+    /* background-color: #1ABC9C; */
+}
+
+.about-info {
+    padding: 0 65px;
+    font-size: 20px;
+    text-align: justify;/* выравнивание по ширине  */
+    width: 50%;
+}
+
+/* Наши Проекты */
+.projects {
+    background-color: #DCFFEB;
+    padding: 125px 0;
+}
+
+.projects-wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+.project {
+    width: 33%;
+    aspect-ratio: 436/376;    /* соотношение сторон */
+    background-image: url(./images/Rectangle\ 3.png);
+    background-size: 100%; /* картинка по размерам блока */
+    display: flex;
+    align-items: flex-end;
+
+}
+
+
+h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 50px;    
+}
+
+.projects-list {
+    display: flex;
+    /* gap: 40px;  */    /* отступы между элементами */
+}
+
+.project:not(:last-child){
+    margin-right: 40px;
+}
+
+.project-hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    padding: 30px 35px 15px;/* 30 сверху 35 справа/слева 15 снизу */
+    opacity: 0; 
+    /* opacity - прозрачность 0 - полностью прозрачный */
+    /* display: none; блок невидимый*/
+}
+
+.project:hover .project-hover {
+    opacity: 1;   /* включаем непрозрачность */
+    transition: 1s;   /* замедление */
+  
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 16px;
+}
+
+.project-hover-text {
+    font-family: 'Open sans', sans-serif;
+    text-align: justify;
+}
+
+/* контакты */
+footer {
+    padding: 80px 0;
+}
+
+.footer-wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 35px;
+    margin-bottom: 55px;
+}
+.footer-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item img {
+    display: block;
+    margin: auto;
+}
+/* 
+a:not(:last-child) {
+    margin-right: 20px;
+} */
